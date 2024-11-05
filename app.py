@@ -3,7 +3,7 @@ from data import get_random_response
 
 app = Flask(__name__)
 
-@app.route('/api/scan', methods=['GET'])
+@app.route('/scan', methods=['GET'])
 def example_api():
     response = get_random_response()
     return jsonify(response)
